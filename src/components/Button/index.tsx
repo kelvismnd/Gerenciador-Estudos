@@ -1,10 +1,14 @@
 import React from "react";
+import './styles.scss'
 
-export function Botao (){
+type Props ={
+    titulo:string;
+}
+
+export function Botao ({titulo}:Props){
     return(
-        <>
-            
-            <button>Botao</button>
-        </>
+      
+            <button className="botao">{titulo}</button>
+        
     )
 }    
